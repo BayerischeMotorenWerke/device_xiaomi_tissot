@@ -41,4 +41,9 @@ export DEVICE=tissot
 export DEVICE_COMMON=msm8953-common
 export VENDOR=xiaomi
 
+
+# Load camera.msm8953.so shim
+CAM_MSM8953="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/hw/camera.msm8953.so
+patchelf --add-needed camera.msm8953_shim.so "$CAM_MSM8953"
+
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
