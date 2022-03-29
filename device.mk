@@ -118,4 +118,5 @@ $(call inherit-product, vendor/xiaomi/tissot/tissot-vendor.mk)
 
 # GCam Go
 PRODUCT_PACKAGES += \
-    GCam
+    GCam \
+    GalleryGo
