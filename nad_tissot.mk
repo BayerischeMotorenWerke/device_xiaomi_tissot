@@ -29,6 +29,7 @@ IS_PHONE := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
